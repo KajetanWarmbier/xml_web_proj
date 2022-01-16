@@ -4,6 +4,10 @@ const cors = require("cors");
 const index = express();
 
 index.use(express.json());
-application.use(cors());
+index.use(cors());
+
+const xmlRoutes = require("./drivers/routes/xmlRoutes");
+
+index.use("/szpital", xmlRoutes);
 
 module.exports = index;

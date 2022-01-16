@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pacjent id="82749273681">
+    <pacjentInfo>
+        <imie>Jacek</imie>
+        <nazwisko>Konował</nazwisko>
+        <dataUrodzenia>15-11-2001</dataUrodzenia>
+        <plec>Mężczyzna</plec>
+        <pesel>82749273681</pesel>
+        <kontakt>666666666</kontakt>
+        <grupaKrwi>AB+</grupaKrwi>
+        <choroba>
+            <rozpoznanie>
+                <nazwaChoroby>Złamana Noga</nazwaChoroby>
+                <symptomy>Kość wystaje tak ostro</symptomy>
+            </rozpoznanie>
+            <sposobLeczenia>
+                <leki>
+                    <lek>
+                        <nazwaLeku>paracetamol</nazwaLeku>
+                        <dawkowanie>3 razy dziennie</dawkowanie>
+                    </lek>
+                </leki>
+                <badania>
+                    <nazwaBadania>prześwietlenie</nazwaBadania>
+                    <lekarzWykonujacy>Jacek Wasilewski</lekarzWykonujacy>
+                    <dataBadania>11-5-2019</dataBadania>
+                </badania>
+                <zabiegi>
+                    <nazwaZabiegu>Nastawienie kości</nazwaZabiegu>
+                    <lekarzWykonujacy>Michał Nóżka</lekarzWykonujacy>
+                    <dataZabiegu>13-5-2019</dataZabiegu>
+                </zabiegi>
+            </sposobLeczenia>
+        </choroba>
+    </pacjentInfo>
+    <zespolMedyczny>
+        <lekarz id="02315">
+            <imie>Krystyna</imie>
+            <nazwisko>Walczuk</nazwisko>
+            <specjalizacja>Pediopatropodobnoktos</specjalizacja>
+            <pokoj>315</pokoj>
+        </lekarz>
+    </zespolMedyczny>
+    <opiekaMedyczna>
+        <pielegniarka id="33">
+            <imie>Kasia</imie>
+            <nazwisko>Wałowicz</nazwisko>
+            <specjalizacja>Młodzi ludzie</specjalizacja>
+        </pielegniarka>
+    </opiekaMedyczna>
+</pacjent>
