@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pacjent id="96558801441">
+    <pacjentInfo>
+        <imie>Barbara</imie>
+        <nazwisko>Mieżwińska</nazwisko>
+        <dataUrodzenia>16-12-1996</dataUrodzenia>
+        <plec>Kobieta</plec>
+        <pesel>96558801441</pesel>
+        <kontakt>777777777</kontakt>
+        <grupaKrwi>B-</grupaKrwi>
+        <choroba>
+            <rozpoznanie>
+                <nazwaChoroby>Cukrzyca</nazwaChoroby>
+                <symptomy>Zaburzenia wagi</symptomy>
+            </rozpoznanie>
+            <sposobLeczenia>
+                <leki>
+                    <lek>
+                        <nazwaLeku>Insulina</nazwaLeku>
+                        <dawkowanie>W zależności od wyniku cukru</dawkowanie>
+                    </lek>
+                </leki>
+                <badania>
+                    <nazwaBadania>OGGT</nazwaBadania>
+                    <lekarzWykonujacy>Jarosław Wiśliński</lekarzWykonujacy>
+                    <dataBadania>19-10-2020</dataBadania>
+                </badania>
+                <zabiegi>
+                    <nazwaZabiegu>Amputacja nogi</nazwaZabiegu>
+                    <lekarzWykonujacy>Michalina Nożyńska</lekarzWykonujacy>
+                    <dataZabiegu>15-6-2022</dataZabiegu>
+                </zabiegi>
+            </sposobLeczenia>
+        </choroba>
+    </pacjentInfo>
+    <zespolMedyczny>
+        <lekarz id="03415">
+            <imie>Andrzej</imie>
+            <nazwisko>Spysiński</nazwisko>
+            <specjalizacja>Diabetolog</specjalizacja>
+            <pokoj>415</pokoj>
+        </lekarz>
+    </zespolMedyczny>
+    <opiekaMedyczna>
+        <pielegniarka id="28">
+            <imie>Augustyna</imie>
+            <nazwisko>Barbarowicz</nazwisko>
+            <specjalizacja>Cukrzyca</specjalizacja>
+        </pielegniarka>
+    </opiekaMedyczna>
+</pacjent>

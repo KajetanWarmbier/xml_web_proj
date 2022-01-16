@@ -1,0 +1,107 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="pacjent">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="pacjentInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element type="xs:string" name="imie"/>
+            <xs:element type="xs:string" name="nazwisko"/>
+            <xs:element type="xs:string" name="dataUrodzenia"/>
+            <xs:element type="xs:string" name="plec"/>
+            <xs:element type="xs:long" name="pesel"/>
+            <xs:element type="xs:int" name="kontakt"/>
+            <xs:element type="xs:string" name="grupaKrwi"/>
+            <xs:element name="choroba">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="rozpoznanie">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element type="xs:string" name="nazwaChoroby"/>
+                        <xs:element type="xs:string" name="symptomy"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="sposobLeczenia">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="leki">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="lek">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element type="xs:string" name="nazwaLeku"/>
+                                    <xs:element type="xs:string" name="dawkowanie"/>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="badania">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element type="xs:string" name="nazwaBadania"/>
+                              <xs:element type="xs:string" name="lekarzWykonujacy"/>
+                              <xs:element type="xs:string" name="dataBadania"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="zabiegi">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element type="xs:string" name="nazwaZabiegu"/>
+                              <xs:element type="xs:string" name="lekarzWykonujacy"/>
+                              <xs:element type="xs:string" name="dataZabiegu"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="zespolMedyczny">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="lekarz">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element type="xs:string" name="imie"/>
+                  <xs:element type="xs:string" name="nazwisko"/>
+                  <xs:element type="xs:string" name="specjalizacja"/>
+                  <xs:element type="xs:short" name="pokoj"/>
+                </xs:sequence>
+                <xs:attribute type="xs:short" name="id"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="opiekaMedyczna">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="pielegniarka">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element type="xs:string" name="imie"/>
+                  <xs:element type="xs:string" name="nazwisko"/>
+                  <xs:element type="xs:string" name="specjalizacja"/>
+                </xs:sequence>
+                <xs:attribute type="xs:byte" name="id"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:long" name="id"/>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

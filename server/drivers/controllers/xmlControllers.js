@@ -14,10 +14,10 @@ const optionsToSave = {
   compact: true,
 };
 const xmlsDir = "./XMLs/";
-const files = fs.readdirSync(xmlsDir);
 
 // ALL
 exports.xml_get_all_data = (req, res) => {
+  const files = fs.readdirSync(xmlsDir);
   const responseObject = [];
   for (const file of files) {
     const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
@@ -29,6 +29,7 @@ exports.xml_get_all_data = (req, res) => {
 
 // PACJENCI GET
 exports.xml_get_pacjenci = (req, res) => {
+  const files = fs.readdirSync(xmlsDir);
   const responseObject = [];
   for (const file of files) {
     const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
@@ -166,9 +167,10 @@ exports.xml_post_pacjent = (req, res) => {
 
 // ZESPOL MEDYCZNY GET
 exports.xml_get_zespolmedyczny = (req, res) => {
+  const files = fs.readdirSync(xmlsDir);
   const responseObject = [];
   for (const file of files) {
-    const result = converter.xml2js(fs.readFileSync(xmlsDir + file));
+    const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
     responseObject.push(result.pacjent.zespolMedyczny.lekarz);
   }
   res.send(responseObject);
@@ -176,6 +178,7 @@ exports.xml_get_zespolmedyczny = (req, res) => {
 
 // OPIEKA MEDYCZNA GET
 exports.xml_get_opiekamedyczna = (req, res) => {
+  const files = fs.readdirSync(xmlsDir);
   const responseObject = [];
   for (const file of files) {
     const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
