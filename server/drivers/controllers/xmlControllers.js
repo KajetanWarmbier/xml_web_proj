@@ -19,12 +19,18 @@ const xmlsDir = "./XMLs/";
 exports.xml_get_all_data = (req, res) => {
   const files = fs.readdirSync(xmlsDir);
   const responseObject = [];
-  for (const file of files) {
-    const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
-    responseObject.push(result);
+  async function objecter() {
+    for (const file of files) {
+      const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
+      responseObject.push(result);
+    }
   }
 
-  res.send(responseObject);
+  objecter()
+    .then(res.send(responseObject))
+    .catch((error) => {
+      console.log(error);
+    });
 };
 
 // PACJENCI GET
@@ -34,6 +40,19 @@ exports.xml_get_pacjenci = (req, res) => {
   for (const file of files) {
     const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
     responseObject.push(result.pacjent);
+  }
+  res.send(responseObject);
+};
+
+exports.xml_get_pacjent_by_id = (req, res) => {
+  const id = req.params.pacjentId;
+  const files = fs.readdirSync(xmlsDir);
+  var responseObject = [];
+  for (const file of files) {
+    const result = converter.xml2js(fs.readFileSync(xmlsDir + file), options);
+    if (result.pacjent._attributes.id === id) {
+      responseObject = result;
+    }
   }
   res.send(responseObject);
 };

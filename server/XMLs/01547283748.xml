@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pacjent id="01547283748">
+    <pacjentInfo>
+        <imie>Jakub</imie>
+        <nazwisko>Arczewski</nazwisko>
+        <dataUrodzenia>12-05-2001</dataUrodzenia>
+        <plec>Mężczyzna</plec>
+        <pesel>01547283748</pesel>
+        <kontakt>578-456-999</kontakt>
+        <grupaKrwi>AB+</grupaKrwi>
+        <choroba>
+            <rozpoznanie>
+                <nazwaChoroby>Depresja</nazwaChoroby>
+                <symptomy>Smutek</symptomy>
+            </rozpoznanie>
+            <sposobLeczenia>
+                <leki>
+                    <lek>
+                        <nazwaLeku>Citabax</nazwaLeku>
+                        <dawkowanie>5mg dziennie</dawkowanie>
+                    </lek>
+                </leki>
+                <badania>
+                    <nazwaBadania>Rozmowa z Psychiatrą</nazwaBadania>
+                    <lekarzWykonujacy>Ludmiła Miłek</lekarzWykonujacy>
+                    <dataBadania>22-08-2019</dataBadania>
+                </badania>
+                <zabiegi>
+                    <nazwaZabiegu>---</nazwaZabiegu>
+                    <lekarzWykonujacy>---</lekarzWykonujacy>
+                    <dataZabiegu>---</dataZabiegu>
+                </zabiegi>
+            </sposobLeczenia>
+        </choroba>
+    </pacjentInfo>
+    <zespolMedyczny>
+        <lekarz id="05219">
+            <imie>Ludmiła</imie>
+            <nazwisko>Miłek</nazwisko>
+            <specjalizacja>Psychiatria Dziecięca</specjalizacja>
+            <pokoj>219</pokoj>
+        </lekarz>
+    </zespolMedyczny>
+    <opiekaMedyczna>
+        <pielegniarka id="57">
+            <imie>Jadzia</imie>
+            <nazwisko>Walentynowicz</nazwisko>
+            <specjalizacja>Psychologia</specjalizacja>
+        </pielegniarka>
+    </opiekaMedyczna>
+</pacjent>
