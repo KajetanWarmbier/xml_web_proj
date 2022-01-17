@@ -1,5 +1,6 @@
 const converter = require("xml-js");
 const fs = require("fs");
+const validator = require("libxmljs2");
 
 // converter settings
 const options = {
