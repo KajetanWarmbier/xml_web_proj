@@ -1,5 +1,5 @@
 # XML PROJECT
-XML project with use of React.js, Node.js and Express.js
+XML project with use of React.js, Node.js and Express.js.
 Project aims to create collection of XMLs with data about patients of fictional hospital.
 It deliveres convenient interface that's accesible for anyone and fast processing of multiple XML files thanks to use of Express.js and xml-js.
 
