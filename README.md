@@ -21,6 +21,6 @@ It deliveres convenient interface that's accesible for anyone and fast processin
 
 ## Design
 * Concept design created in **Figma**
-**Proper design not yet implemented**
+(**Proper design not yet implemented**)
 
 
